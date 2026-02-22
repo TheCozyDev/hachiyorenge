@@ -1,7 +1,7 @@
 <div align="center">
   <img src="fastlane/metadata/android/en-US/images/icon-fit.png" width="200px" />
 
-  # Lotus
+  # Hachiyorenge
 
   ### Music player for Android
   
@@ -41,7 +41,7 @@ If you enjoy using Lotus, consider [buying me a coffee](https://en.liberapay.com
 1. **Get the Source Code**  
    - Clone the repository or download the source code:
      ```bash
-     git clone https://github.com/dn0ne/lotus.git
+     git clone https://github.com/TheCozyDev/hachiyorenge
      ```
 
 2. **Open project in Android Studio**  
