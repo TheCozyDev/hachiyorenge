@@ -29,14 +29,6 @@
 - Manually update track details or fetch accurate info from [MusicBrainz](https://musicbrainz.org/)
 - Designed with [Material You](https://m3.material.io/) and supports dynamic color palettes
 
-## Download
-Latest stable version is available on [GitHub releases](https://github.com/dn0ne/lotus/releases/latest)
-
-Stable releases are also available on [F-Droid](https://f-droid.org/packages/com.dn0ne.lotus)
-
-## Support
-If you enjoy using Lotus, consider [buying me a coffee](https://en.liberapay.com/dn0ne/donate)!
-
 ## Build
 1. **Get the Source Code**  
    - Clone the repository or download the source code:
@@ -55,6 +47,12 @@ If you enjoy using Lotus, consider [buying me a coffee](https://en.liberapay.com
    - Click the **Run** button or press `Shift + F10` to build and launch the app.  
 
 That's it! The app should now be running. 
+
+## Note
+
+Since the previous owner of the project seems to have abandoned it, I decided to fix the app myself.
+I am not an expert programmer nor do I have any knowledge in Kotlin or Android Programming but I really
+liked the app and wanted to fix the Lyrics tab that was crashing the app when searching for the lyrics.
 
 ## Credits
 
