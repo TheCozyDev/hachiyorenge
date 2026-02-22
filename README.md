@@ -57,6 +57,9 @@ If you enjoy using Lotus, consider [buying me a coffee](https://en.liberapay.com
 That's it! The app should now be running. 
 
 ## Credits
+
+This is a fork of [dn0ne's lotus](https://github.com/dn0ne/lotus)
+
 Some UI elements are inspired by [Vanilla](https://github.com/vanilla-music/vanilla)
 
 Lyrics UI is inspired by [Beautiful Lyrics](https://github.com/surfbryce/beautiful-lyrics)
