@@ -38,5 +38,5 @@ fun String.toLyricsTimestamp(): Int {
 
         return minutes * 60 * 1000 + seconds * 1000 + centiseconds * 10
     }
-        ?: throw IllegalArgumentException("Failed to parse timestamp, does not match regex ${regex.pattern}")
+    throw IllegalArgumentException("Failed to parse timestamp, does not match regex ${regex.pattern}")
 }
