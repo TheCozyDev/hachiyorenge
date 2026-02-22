@@ -12,14 +12,15 @@ val abiCodes = mapOf("armeabi-v7a" to 1, "arm64-v8a" to 2, "x86" to 3, "x86_64" 
 
 android {
     namespace = "com.dn0ne.player"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.dn0ne.lotus"
+        applicationId = "com.TheCozyDev.hachiyorenge"
         minSdk = 24
-        targetSdk = 35
-        versionCode = 1_002_000
-        versionName = "1.2.0"
+        //noinspection EditedTargetSdkVersion
+        targetSdk = 36
+        versionCode = 1_000_000
+        versionName = "1.0.0"
 
         if (splitApks) {
             splits {
@@ -79,7 +80,7 @@ android {
     applicationVariants.all {
         outputs.all {
             (this as com.android.build.gradle.internal.api.BaseVariantOutputImpl).outputFileName =
-                "lotus-${defaultConfig.versionName}-${name}.apk"
+                "hachiyorenge-${defaultConfig.versionName}-${name}.apk"
         }
     }
 
