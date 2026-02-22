@@ -1,6 +1,6 @@
 <resources>
     <!-- App name -->
-    <string name="app_name" translatable="false">Lotus</string>
+    <string name="app_name" translatable="false">Hachiyorenge</string>
 
     <!-- Links -->
     <!-- Lyrics provider link -->
@@ -185,7 +185,7 @@
     <string name="publish_on_lrclib">Publish on LRCLIB</string>
     <string name="unable_to_publish">Unable to publish: title, artist or album not specified.</string>
     <string name="published_successfully">Published successfully.</string>
-    <string name="solving_challenge">Solving challenge...</string>
+    <string name="solving_challenge">Solving challenge…</string>
 
     <!-- Lyrics sheet -->
     <string name="lyrics">Lyrics</string>
