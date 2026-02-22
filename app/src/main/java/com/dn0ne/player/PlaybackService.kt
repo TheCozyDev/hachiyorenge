@@ -25,6 +25,7 @@ import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
 import org.koin.android.ext.android.get
 import java.lang.Exception
+import androidx.core.content.edit
 
 private class EqualizerSettings(context: Context) {
     private val sharedPreferences =
@@ -39,9 +40,8 @@ private class EqualizerSettings(context: Context) {
     var isEnabled: Boolean
         get() = sharedPreferences.getBoolean(isEnabledKey, false)
         set(value) {
-            with(sharedPreferences.edit()) {
+            sharedPreferences.edit {
                 putBoolean(isEnabledKey, value)
-                apply()
             }
         }
 
@@ -49,27 +49,24 @@ private class EqualizerSettings(context: Context) {
         get() = sharedPreferences.getString(bandFrequenciesKey, null)
             ?.let { Json.decodeFromString(it) }
         set(value) {
-            with(sharedPreferences.edit()) {
+            sharedPreferences.edit {
                 putString(bandFrequenciesKey, value?.let { Json.encodeToString(it) })
-                apply()
             }
         }
 
     var lowerLevelLimit: Int
         get() = sharedPreferences.getInt(lowerLevelLimitKey, 0)
         set(value) {
-            with(sharedPreferences.edit()) {
+            sharedPreferences.edit {
                 putInt(lowerLevelLimitKey, value)
-                apply()
             }
         }
 
     var upperLevelLimit: Int
         get() = sharedPreferences.getInt(upperLevelLimitKey, 0)
         set(value) {
-            with(sharedPreferences.edit()) {
+            sharedPreferences.edit {
                 putInt(upperLevelLimitKey, value)
-                apply()
             }
         }
 
@@ -77,9 +74,8 @@ private class EqualizerSettings(context: Context) {
         get() = sharedPreferences.getString(bandLevelsKey, null)
             ?.let { Json.decodeFromString(it) }
         set(value) {
-            with(sharedPreferences.edit()) {
+            sharedPreferences.edit {
                 putString(bandLevelsKey, value?.let { Json.encodeToString(it) })
-                apply()
             }
         }
 }

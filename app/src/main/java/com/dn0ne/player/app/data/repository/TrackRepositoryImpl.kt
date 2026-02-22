@@ -14,6 +14,7 @@ import androidx.media3.common.MediaItem
 import com.dn0ne.player.app.domain.track.Track
 import com.dn0ne.player.core.data.Settings
 import java.util.concurrent.TimeUnit
+import androidx.core.net.toUri
 
 class TrackRepositoryImpl(
     private val context: Context,
@@ -59,8 +60,7 @@ class TrackRepositoryImpl(
             }
 
             append("(")
-            var scanFilter = ""
-            scanFilter = if (isScanModeInclusive) {
+            val scanFilter: String = if (isScanModeInclusive) {
                 (listOf(scanMusicFolder).filter { it } + extraScanFolders)
                     .joinToString(" OR ") {
                         "${MediaStore.Audio.Media.DATA} LIKE ?"
@@ -145,7 +145,7 @@ class TrackRepositoryImpl(
                 )
 
                 val albumArtUri = ContentUris.withAppendedId(
-                    Uri.parse("content://media/external/audio/albumart"),
+                    "content://media/external/audio/albumart".toUri(),
                     albumId
                 )
                 val mediaItem = MediaItem.fromUri(uri)
